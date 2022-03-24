@@ -11,7 +11,7 @@ const Header = ({ logout }) => {
 
   useLayoutEffect(() => {
     setIsAuthenticated(getAuthenticationStatus());
-  });
+  }, []);
 
   const handleLogout = event => {
     event.preventDefault();

@@ -18,7 +18,7 @@ import PrivateRoute from "./components/private-route";
 function App({ fetchUser }) {
   useLayoutEffect(() => {
     fetchUser();
-  }, []);
+  }, [fetchUser]);
 
   return (
     <Router>
